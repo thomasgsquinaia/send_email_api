@@ -1,5 +1,13 @@
 package br.com.thomasquinaia.sendemailapi;
 
-public record EmailService(String to, String subject, String body) {
-    
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailService {
+     private final JavaMailSender mailSender;
+
+    public EmailService(JavaMailSender mailSender) {
+        this.mailSender = mailSender;
+    }
 }
