@@ -10,9 +10,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class EmailController {
     private final EmailService emailService;
 
+    public EmailController(EmailService emailService) {
+        this.emailService = emailService;
+    }
+
     @PostMapping
     public void sendEMail(Email email) {
         System.out.println(email);
     }
-    
+
 }
