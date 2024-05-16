@@ -28,6 +28,19 @@ Clone the repository:
 git clone https://github.com/thomasgsquinaia/https://github.com/thomasgsquinaia/send-email-api
 ```
 
+<h3>Config application.properties variables</h2>
+
+Use the `application.properties` as reference to create your configuration file
+
+```yaml
+spring.mail.host=sandbox.smtp.mailtrap.io
+spring.mail.port=465
+spring.mail.username=
+spring.mail.password=
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+```
+
 <h2 id="routes">📍 API Endpoints</h2>
 
 | route               | description                                          
