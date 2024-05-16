@@ -11,7 +11,7 @@
     <b>Sending emails for testing using the MailTrap tool.</b>
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="tech">💻 Technologies</h2>
 
 #### List of all technologies and tools
 - Java
