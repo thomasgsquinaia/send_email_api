@@ -1,36 +1,25 @@
-<h1 align="center" style="font-weight: bold;">Send Email 💻</h1>
+# Send Email
 
-<p align="center">
-    <a href="#tech">Technologies</a> • 
-    <a href="#started">Getting Started</a> • 
-    <a href="#routes">API Endpoints</a> •
-    <a href="#about">About</a> •
-</p>
+## API com a finalidade de enviar e-mails para testes usando a ferramenta MailTrap.
 
-<p align="center">
-    <b>Sending emails for testing using the MailTrap tool.</b>
-</p>
+Este projeto foi construído com **Java, Springboot e [MailTrap](https://mailtrap.io/).**
 
-<h2 id="tech">💻 Technologies</h2>
+## Índice
 
-#### List of all technologies and tools
-- Java
-- SpringBoot
-- [MailTrap](https://mailtrap.io/)
+- [Instalação API](#instalação-api)
+- [API Endpoints](#api-endpoints)
+- [Insomnia](#insomnia)
+- [Sobre](#sobre)
 
-<h2 id="started">🚀 Getting started</h2>
+## Instalação API
 
-<h3>Cloning</h3>
-
-Clone the repository:
+1. Clonar o repositório:
 
 ```bash
-git clone https://github.com/thomasgsquinaia/https://github.com/thomasgsquinaia/send-email-api
+git clone https://github.com/thomasgsquinaia/send_email_api
 ```
 
-<h3>Config application.properties variables</h2>
-
-Use the `application.properties` as reference to create your configuration file
+2. Configure o arquivo `application.properties` no seu projeto conforme o exemplo abaixo, utilizando as variáveis de ambiente. É importante adicionar o nome de usuário e a senha nas variáveis `spring.mail.username=` e `spring.mail.password=`. Para obter esses dados, acesse o site do [MailTrap](https://mailtrap.io/), crie uma Caixa de Entrada (Inbox) e copie as informações de nome de usuário e senha na aba de SMTP. Dessa forma, você poderá rodar o projeto sem intercorrências.
 
 ```yaml
 spring.mail.host=sandbox.smtp.mailtrap.io
@@ -41,13 +30,18 @@ spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 ```
 
-<h2 id="routes">📍 API Endpoints</h2>
+## API Endpoints
+A API fornece os seguintes endpoints:
 
-| route               | description                                          
-|----------------------|-----------------------------------------------------
-| <kbd>POST /email</kbd>     | send email for MailTrap Tool
+**EMAIL**
+```markdown
+POST /email - Envio de e-mail - {to, subject, body}  
+```
 
+## Insomnia
 
-<h2 id="about">📫 About</h2>
+Se optar por fazer as solicitações usando o Insomnia, é necessário importar todas as coleções de solicitações a partir do arquivo `insomnia_send_email.json` localizado na raiz do projeto. 
+
+## Sobre
 
 Linkedin: https://www.linkedin.com/in/thomas-quinaia-82b5221b1/
