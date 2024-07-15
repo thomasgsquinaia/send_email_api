@@ -42,6 +42,11 @@ POST /email - Envio de e-mail - {to, subject, body}
 
 Se optar por fazer as solicitações usando o Insomnia, é necessário importar todas as coleções de solicitações a partir do arquivo `insomnia_send_email.json` localizado na raiz do projeto. 
 
+<p align="center">
+    <img src="./.github/img/insomnia-send-email.jpeg" alt="swagger-geo-user-doc1" width="1200px">
+    <img src="./.github/img/mailtrap-send-email.jpeg" alt="swagger-geo-user-doc2" width="1200px">
+</p>
+
 ## Sobre
 
 Linkedin: https://www.linkedin.com/in/thomas-quinaia-82b5221b1/
