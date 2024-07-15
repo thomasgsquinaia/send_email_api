@@ -7,7 +7,7 @@ Este projeto foi construído com **Java, Springboot e [MailTrap](https://mailtra
 ## Índice
 
 - [Instalação API](#instalação-api)
-- [API Endpoints](#api-endpoints)
+- [API Endpoint](#api-endpoint)
 - [Insomnia](#insomnia)
 - [Sobre](#sobre)
 
@@ -30,8 +30,8 @@ spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 ```
 
-## API Endpoints
-A API fornece os seguintes endpoints:
+## API Endpoint
+A API fornece o seguinte endpoint:
 
 **EMAIL**
 ```markdown
